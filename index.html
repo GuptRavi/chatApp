@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <title>iChat - Realtime Node Socket.io Chat App</title> -->
+  <title>Alpine - Realtime Chat App</title>
+
+<!-- By default, the Socket.IO server exposes a client bundle at /socket.io/socket.io.js. io will be registered as a global variable: -->
+  <script defer src="http://localhost:8000/socket.io/socket.io.js"></script> <!-- connecting index.js to client.js -->
+  
+  <script defer src="js/client.js"></script> <!-- defer - after loading DOM koad js defer files-->
+  <link rel="stylesheet" href="css/style.css">
+  
+</head>
+<body>
+  
+  <nav class="nav">
+    <img class="logo" src="chat.png" alt="Can't load it">
+    <h1>Welcome to Alpine Chat App</h1>
+  </nav>
+
+  <div class="container">
+    <!-- <div class="message right">Ravi: Hey how are you?</div>
+    <div class="message left">Piya: I'm fime, What about you?</div> -->
+  </div>
+
+  <div class="send">
+    <form action="#" id="send-container">
+      <input type="text" name="messageInp" id="messageInp" placeholder="Type here to chat...">
+      <button class="btn" type="submit">Send</button>
+    </form>
+  </div>
+
+
+  <audio id="myAudio" src="/js/tone.mp3"></audio>
+
+
+  <footer><p>&copy;&nbsp; 2000-2022 Alpine Communication Pvt. Ltd, &nbsp;India. &nbsp;All Rights Reserved.</p></footer>
+</body>
+</html>

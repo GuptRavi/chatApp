@@ -1,0 +1,184 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-image: linear-gradient(rgb(85, 174, 215), rgb(143, 39, 143));
+  height: 100vh;
+  background-image: url('/bg.jpg');
+  background-size: 100% 100%;
+}
+
+.nav {
+  background-color: black;
+  /* padding-top: 10px; */
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  height: 8%;
+}
+.logo {
+  /* To center it */
+  /* display: block;
+  margin: auto; */
+  /* Setting width and height */
+  width: 50px;
+  height: 50px;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+.nav h1{
+  color: white;
+  max-width: 100%;
+  text-align: center;
+  margin: auto;
+  padding-right: 15px;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 100%;
+  width: 70%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.559);
+  height: 60vh;
+  margin-top: 10px;
+  /* border-radius: 10px; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 2px outset #f0f0f4a1;
+  padding: 23px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.message {
+  background-color: #353030;
+  /* width: 25%; */
+  padding: 7px;
+  margin: 15px 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+  outline: 2px outset #f0f0f4a1;
+}
+.right {
+  float: right;
+  clear: both;
+  background-color: rgb(33 204 144);
+  max-width: 70%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.left {
+  float: left;
+  clear: both;
+  color: #ebb8b8;
+  max-width: 70%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#send-container {
+text-align: center;
+max-width: 100%;
+width: 76%;
+margin: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#messageInp {
+  max-width: 100%;
+  width: 85%;
+  /* border: 2px inset black; */
+  border:2px inset #f0f0f4a1;
+  /* border-radius: 10px; */
+  padding: 5px 15px;
+  background-color: rgba(0, 0, 0, 0.821);
+  color: white;
+  font-size: 17px;
+  /* margin: 5px 0px; */
+  /* outline: none; */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.btn {
+  border: none;
+  border: 2px inset #f0f0f4a1;
+  font-size: large;
+  /* border-radius: 10px; */
+  cursor: pointer;
+  text-shadow: 1px 1px 4px #4c4fada1;
+
+  background: none; /* to make the transparent button */
+  color: white;
+
+  padding: 5px 20px;
+
+  font-weight: bold;
+
+  font-family: monospace;
+  outline: none;
+  margin-left: 8px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.btn:hover {
+  background-color: #16184b;
+  color: rgb(249, 208, 136);
+  text-shadow: 1px 1px 8px wheat;
+}
+.btn:active {
+  background-color: snow;
+  color: #3b3e93;
+}
+
+footer {
+  background-color: black;
+  height: 7%;
+  position: fixed;
+  bottom: 0%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+/* Styling ScrollBar: Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #6688c352;;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(162, 162, 241);
+  border-radius: 20px;
+  /* border: 1px solid cyan; */
+  border: 1px solid rgba(0, 0, 0, 0.117);
+  outline: 1px inset cyan;
+}
+
+@media only screen and (min-width:200px) and (max-width:610px) {
+  .nav{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo{
+    margin: 0px;
+    margin-top: 5px;
+  }
+
+}
